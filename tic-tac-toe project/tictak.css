@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#8efbef;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    width: 100%;
+    margin-top:2%;
+    
+}
+header > h1, header>h2 {
+    margin: 2%;
+}
+h2{
+    width: 100%;
+}
+
+.players{
+    font-size:1.2rem;
+    font-family:"Kadwa",sans-serif;
+    display: grid;
+    width: 15vw;
+
+}
+
+.info{
+    margin: 1% auto;
+    font-size: 1.5em;
+    height: 5vh;
+    grid-template-columns: repeat(3,15vh);
+    grid-template-rows: repeat(3,15vw);
+}
+#edit_clear_btn{
+    height: 1.7rem;
+    width: auto;
+    padding: 0.3em;
+    border-radius: 5px;
+}
+
+.container{
+    height: 70%;
+    width: 50%;
+
+}
+#board{
+    
+    display: grid;
+    grid-template-columns: repeat(3,10vh);
+    grid-template-rows: repeat(3,10vh);
+    height: 80%;
+    width: 100%;
+    margin: 2rem auto;
+    justify-content:center;
+    
+}
+
+
+.square{
+    font-size: 3.5em;
+    font-family: sans-serif;
+    width: 15vh;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:3px solid pink;
+    border-right:3px solid pink
+}
+
+.square:nth-child(3n){
+    border-right:none;
+}
+.square:nth-child(6)~.square{
+    border-bottom: none;
+}
+
+.reset{
+    
+    margin: 2% 40%;
+    font-size: 1.3em;
+    padding: 0.5em;
+    border-radius: 0.51em;
+    width: auto;
+}

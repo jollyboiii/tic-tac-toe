@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tictak.css">
+    <title>Vinilla JS TicTackToe</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <header>
+          <h1>Tic Tac Toe</h1>
+          <h2>This is a tictaktoe game!</h2>
+        <div class="players">
+          <span class="player1 ply">
+            <p id="p1" class="player">Player2 
+              <span id="p1-symbole">X</span>
+              :<span id="p1_name" class="p_name"></span>
+            </p> 
+          </span>
+
+          <!-- <span class="player_btn">
+            <button class="p1_rename" id="edit_clear_btn">Rename</button>
+            <button class="clear_name" id="edit_clear_btn">Clear</button>
+          </span> -->
+
+          <span class="player2 ply">
+            <p id="p2" class="player">Player1 
+              <span id="p2-symbole">O</span>
+              :<span id="p2_name" class="p_name"></span>
+            </p> 
+          </span>
+        
+          <!-- <span class="player_btn">
+            <button class="p1_rename" id="edit_clear_btn">Rename</button>
+            <button class="clear_name" id="edit_clear_btn">Clear</button>
+          </span> -->
+        </div>
+        </header>
+        
+        <div class="info">
+            
+        </div>
+  
+        <section id="board" >
+            
+            <div id="1" class="square"></div>
+            <div id="2" class="square"></div>
+            <div id="3" class="square"></div>
+            <div id="4" class="square"></div>
+            <div id="5" class="square"></div>
+            <div id="6" class="square"></div>
+            <div id="7" class="square"></div>
+            <div id="8" class="square"></div>
+            <div id="9" class="square"></div>  
+            
+        </section>
+
+        <button class="reset" onclick="reset()">Reset Board!</button>
+      </div>
+    </div>    
+  </body>
+  <script src="tictak.js"></script>
+</html>
+
+
+
